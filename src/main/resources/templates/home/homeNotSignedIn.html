@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>My first Spring Boot application</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link th:href = "@{/css/bootstrap.min.css}" rel="stylesheet">
+    <script src="/js/jquery-3.6.1.min.js" th:src="@{/js/jquery-3.6.1.min.js}"></script>
+</head>
+<body>
+<div th:replace="~{fragments/general :: header}">...</div>
+<div class="container">
+    <div class="position-absolute top-20 end-0">
+        <p class="text-left fs-6 text-decoration-underline">
+            <a class="nav-link" href="/signup" th:href="@{/signup}">Sign up</a>
+        </p>
+    </div>
+</div>
+
+</body>
+</html>
